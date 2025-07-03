@@ -21,7 +21,7 @@ To run this project:
    - Add your own `google-services.json` (not included in repo)
 
 2. **ESP32 Firmware:**
-   - Code is inside the `arduino/SmartDoorLock` folder
+   - Code is inside the `arduino_code/SmartDoorLock` folder
    - Replace credentials in `secret.h`
 
 3. **Firebase Setup:**
