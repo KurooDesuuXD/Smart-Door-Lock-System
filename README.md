@@ -1,16 +1,49 @@
-# secure_entry
+# Smart Door Lock System
 
-A new Flutter project.
+A smart door lock system using IoT technology powered by Flutter, Firebase, and an ESP32 microcontroller with RFID integration.
+
+## Features
+
+- 🔐 App-based unlocking (Flutter + Firebase)
+- 🪪 RFID card access
+- 📋 Realtime activity logs (unlock events, methods)
+- ⚙️ Admin control (PIN updates, log clearance)
+- 📡 Firebase Realtime Database sync
+- 💡 Clean, secure mobile UI
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this project:
 
-A few resources to get you started if this is your first Flutter project:
+1. **Flutter setup:**
+   - Install Flutter SDK
+   - Run `flutter pub get`
+   - Add your own `google-services.json` (not included in repo)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. **ESP32 Firmware:**
+   - Code is inside the `arduino/SmartDoorLock` folder
+   - Replace credentials in `secret.h`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. **Firebase Setup:**
+   - Enable Email/Password authentication
+   - Realtime Database with `/door`, `/logs`, `/users` paths
+
+## Resources
+
+- [Flutter Documentation](https://docs.flutter.dev/)
+- [Firebase for Flutter](https://firebase.flutter.dev/)
+- [ESP32 Firebase Client](https://github.com/mobizt/Firebase-ESP-Client)
+
+---
+
+## Notes
+
+- 🚫 Sensitive files like `google-services.json` and `secret.h` are excluded from version control using `.gitignore`.
+- 📁 This project is structured for both mobile UI and IoT firmware collaboration.
+
+---
+
+## Author
+
+Christian Coles V. – BSIT - A Capstone 02  
+Infotech College of Arts and Sciences – Sucat Branch
